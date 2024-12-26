@@ -13,5 +13,5 @@ B2: tạo key mới
 git init
 git add .
 git commit -m"ten"
-git origin master
+git push origin master
 
