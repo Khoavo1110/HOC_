@@ -1,0 +1,17 @@
+B1: cấu hình git 
+--sau khi cài đặc git thì mở  git bash lên :
+$ git config --global user.name "Khoavo1110"
+$ git config --global user.email vodangkhoa111005@gmail.com
+tentkgit:Khoavo1110
+B2: tạo key mới
+*)ls -al ~/.ssh (kiểm tra xem mình có  key chưa)
+*)ssh-keygen -t rsa -b 4096 -C "vodangkhoa111005@gmail.com"  (chỗ lưu của key)
+*)eval "$(ssh-agent -s)" ( kiểm tra xem key đã được kích hoạt chưa ví dụ :agent pip....)
+*)ssh-add ~/.ssh/id_rsa
+*)cat ~/.ssh/id_rsa.pub  (lấy key  công khai )
+
+git init
+git add .
+git commit -m"ten"
+git origin master
+
