@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <!--trong html có thuộc tính lang là chỉ định ngôn ngữ <html lang="en-US">-->
+    <head>
+        <meta charset="UTF-8">
+<meta name="description" content="Free Web tutorials">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta name="author" content="Dang Khoa"> <!-- các thể meta trong head đảm bảo hiển thị thông tin quan trọng về trang web mà bạn dang viết-->
+        <style>
+            a:link{
+                color:pink;
+                background-color:blue;
+                text-decoration:line-through;
+            }
+            
+            a:hover{
+                color:green;
+            }
+            a:active{
+                color:yellow;
+            }
+            a:visited{
+                color:green ;
+            }
+
+            body  {background-color:yellow}
+            h3 {color:green }
+            p {color:blue}
+        </style>
+        <title>
+            Đang học về HTML
+            <!-- đây là cách hiển thị tiêu đề trên thanh tab của công cụ tìm kiếm-->
+        </title>
+    </head>
+    <body style="background-color: powderblue">
+        <h1 style="background-color:bisque">đây là tiêu đề quan trọng nhất  </h1>
+        <h2 id="C5">đây là tiêu dề quan trọng thứ hai </h2>
+        <h3 style="font-family:verdana"> đây là tiêu đề quan trọng thư 3</h3>
+        <h4 style ="text-align:center">đây là tiêu đề quan trọng thứ 4</h4>
+        <h5> đây là tiêu đề quan trọng thứ 5</h5>
+        <h6>đây là tiêu đề quan trọng thứ 6 và là cuối cùng </h6>
+        <p> đoạn văn bản dược mở và đóng trong một thẻ p </p>
+        <a href="https://www.w3schools.com"> đay là link liên kết được ghi trong thẻ a và thuộc tính href ="đường_dẫn" </a> 
+        <img src="w3schools.jpg" alt="w3shool.com " width="104" height="142"> 
+        <!-- để chèn một ảnh thì có thể img src thuộc tính chứa đường dẫn còn alt là chú thích cho ảnh đó còn width là chiều rộng và height là chiều cao-->
+        <p style="color:red;"> đây là cách thêm màu sắc</p>
+        <!-- muốn thêm màu sắc thì dùng thuộc tính style="color:màu;"-->
+        <h1 style="font-size:30px;">Heading 1</h1>
+        <!--các thể h đều có kích thước cố định mà bạn có thẻ thay đổi nó ví dụ là style="front-size:10px;"-->
+        <hr>
+        <!-- ta có thể hr để ngăn cách nội dung cần tách-->
+        <p> đây là nội dung <br>và nó có thể được tách<br> bằng thẻ br</p>
+        <!-- dùng thẻ br đẻ tách nội dung xuống dòng mong muốn -->
+         <pre> 
+            đây là cách khác để các dòng
+            được ngắt và xuống dòng được giữ nguyên 
+         </pre>
+         <!--sử dụng thể pre để giữ nguyên các khoảng trắng và xuống dòng mà không cần thêm thê br hay hr -->
+<!--Sử dụng stylethuộc tính để tạo kiểu cho các phần tử HTML
+Sử dụng background-colorcho màu nền
+Sử dụng colorcho màu chữ
+Sử dụng font-familycho phông chữ văn bản
+Sử dụng font-sizecho kích thước văn bản
+Sử dụng text-alignđể căn chỉnh văn bản-->
+<b>đây là cách in đậm một chữ</b>
+<p><strong>đây cung là in đậm một chữ mà sử dụng strong </strong></p>
+<i> đây là cách in nghiêng một chữ</i>
+<p><em>đây cũng là in nghiêng  mà sử dụng {em} </em></p>
+<small> đây cách làm nhỏ chữ </small>
+<p> đây là cách bôi hight light một chữ <mark>nè</mark></p>
+<p>đay là cách gach đi một chữ<del>nè</del></p>
+<p> đay là cách gạch dươi một chữ <ins>nè</ins></p>
+<p>đay là cách làm một chữ lệch dòng xuống dưới  <sub>nè</sub></p>
+<p>đây là cách làm một chữ lệch dòng lên trên <sup>nè</sup></p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+    đây là cách trích dẫn một phần từ một bài khác !
+</blockquote>
+<p>đây là cách ghi trích dẫn lời :<q>tôi tên là Khoa </q></p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<!-- đây là cách ghi viết tắt và chú thích cho từ viết tắt đó khi lia chuột tới thì nó sẽ hiện thông tin đầy đủ-->
+ <address> 
+    ten : <br>
+    tuoi: <br>
+    gioi tinh :<br>
+    que quan: <br>
+ </address>
+ <p><cite>ngôi nhà nhỏ </cite> của tác giả võ đăng khoa </p>
+ <!-- đây là cách in nghiêng một tên tác phẩm hoặc một cái gì khác tương tự như vậy-->
+  <bdo dir="rtl"> đây là cách viết ngược tất cả các từ </bdo>
+  <p style="border:2px solid red"> không chỉ lầ tô hết mà chỉ là tô viền </p>
+  <!-- có các cách chỉ định màu khác nhau như là p background-color:rgb() hoặc là  background-color:#ff654  hoặc là background-color:hsla(%%%)-->
+   <pre>
+    có thế css cho thuộc tính với 3 cách khác nhau là inline là cho thể style ngay trong thể khác mà ví dụ :<p style="color:yellow ">đây là cách inline  </p>
+    internal là cách định nghĩa bên trong hai thẻ đóng và mở style và nó nằm trong hai thẻ đóng và mở head lước lên để xem cách viết 
+    external là trích xuất đường dẫn trong thẻ link nằm trong head link rel="tên_đường_dẫn" href="đường_đẫn"
+   </pre>
+   <pre> 
+    trong thể a href và đường dẫn có tham số thứ 3 là taget="" _self - Mặc định. Mở tài liệu trong cùng cửa sổ/tab khi tài liệu được nhấp vào
+    _blank - Mở tài liệu trong cửa sổ hoặc tab mới
+    _parent - Mở tài liệu trong khung cha
+    _top - Mở tài liệu ở toàn bộ cửa sổ
+    -- có thể kết hợp dường dẫn với hình để khi nhấp vào hình cho đển trang web của đường dẫn
+    -- có thể sử dụng xem emal với trong thể a href="mailto:ten_mail"
+   </pre>
+   <button onclick="document.location='https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button_element.asp'">đây là cách tạo nút khi nhấn vào là chuyển sang trang khác </button> 
+<a href="defaule.asp" titile="không có trang nào cả "> đay là cách ghi chú khi tạo đường dẫn   </a>
+<p><a href="#C5">đi đến thẻ h5 </a></p>
+<pre>các phần đui của ảnh img
+    Định dạng tệp viết tắt Phần mở rộng tệp
+    Đồ họa mạng di động hoạt hình APNG .apng
+    Định dạng trao đổi đồ họa GIF .gif
+    ICO Biểu tượng Microsoft .ico, .cur
+    Hình ảnh của Nhóm chuyên gia chụp ảnh chung JPEG .jpg, .jpeg, .jfif, .pjpeg, .pjp
+    Đồ họa mạng di động PNG .png
+    Đồ họa vectơ có thể mở rộng SVG .svg</pre>
+<img crs="https://example.com/images/image.png" alt="workspace" usemap="#mymap">
+<map name="mymap">
+    <area shape="rect" coords="34,44,270,350" href="link1.html" alt="Description 1" onclick="myfunction()"><!--area là thuộc tính của một của khu vực mà bạn chỉ định :chữ nhật , hình tròn ,đa giác ,và toàn màng hình theo thứ tự -->
+    <area shape="circle" coords="337,300,44" href="link2.html" alt="Description 2">
+    <area shape="poly" coords="100,100,200,50,250,150" href="link3.html" alt="Description 3">
+    <area shape="default" href="link4.html" alt="Default Link">
+</map>
+<script>
+    function myfunction(){
+        console.log('ban chon tách cafecafe')
+    }
+</script>
+<style>
+
+
+    body{
+        background-image:url('example_img_girl.jpg');
+        background-repeat:no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+</style>
+<picture>
+    <source media="(min-width: 650px)" srcset="img_food.jpg">
+    <source media="(min-width: 465px)" srcset="img_car.jpg">
+    <img src="img_girl.jpg" alt="Default image">
+  </picture>
+  <!-- đây là thể cho phép bạn chọn hình ảnh phù hợp với khung hình mà bạn mong muốn source là điều kiện còn srcset là nguồn của hình ảnh 
+   nếu không có hình nào phù hợp thì nó sẽ lấy hình ở img làm mặt định -->
+   <!--tạo một table-->
+   <table> 
+    <tr>
+        <th>ngay</th>
+        <th>thang</th>
+        <th>nam</th>
+    </tr>
+    <tr>
+        <td>ho</td>
+        <td>ten</td>
+        <td>tuoi</td>
+    </tr>
+    <style>
+         table,th,td{
+            border:2px solid black;
+            border-collapse:collapse;
+            border-radius:50px;
+         }
+         th,td{
+            border-style:dotted;
+            background-color:#96D4D4;
+           border-color:yellow;
+           
+         }
+         th:nth-child(even),td:nth-child(even){
+            background-color:blue ;
+         }
+         tr{
+            border-bottom: 1px solid black ;
+         }
+         tr:hover {background-color:blue}
+        
+    </style>
+<!--thuộc tính colapse để nối các đường viền của các ô được bôi khác nhau lại thành một khối 
+thuộc tính radius tạo các góc bo tròn
+thuộc tính border-style tạo ra các đường kẻ có hình dạng mong muốn 
+thuộc tính border-color tạo ra các dường kẻ có màu mong muốn 
+có thuộc tính style:height va width đều được thêm vào các hàng và cột của table để chỉnh chiều dài và rộng của thành phàn phàn tử -->\
+<!--thuộc tính th:nth-child(even) chọn các ô có thứ tự chẵn để áp dụng -->
+<!-- thuộc tính border-bottom tạo đường kể bên dưới của bảng-->\
+ <!-- thuộc tính hover  được thêm vào khi bạn lia chuột đến các hàng trong bảng thì nó sẽ đổi màu theo màu bạn đã chọn -->
+ <table>
+    <colgroup>
+        <col span="2" style="background-color: red;"><!-- thuộc tính colgroup  phải được đứng trước khi tạo bảngbảng    -->
+        <!--muốn chọn các cột phía sau thì chỉ cần col span="so_lương " -->
+        <col span="1" style="visibility:collapse"> <!-- đây là cách ẩn đi cội trong bảng-->
+    </colgroup>
+    <tr>
+        <th>Thứ Hai</th>
+        <th>Thứ Ba</th>
+        <th>Thứ Tư</th> <!-- Cột này không được chọn màu đỏ -->
+    </tr>
+</table>
+<!--- ----------------------------------------------------------------------->
+<dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
+  <!-- tạo  ra các nội dung cha và nội dung con -->
+   <ul style-="list-style-type:circle ; "><!-- thuộc tính định dạng các dấu đầu dòng-->
+    <li>vo </li>
+    <li>dang </li>
+    <li>khoa</li>
+   </ul>
+   <style> 
+    ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+    }
+    li {
+        float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;}
+   </style>
+   <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <style>
+    div {
+      width:30%;  
+      display:inline-block;
+    }
+
+    </style>
+    <!-- thuộc tính display:inline-block dùng cho các khối nằm sát bên dưới 
+    ngoài ra có flex là làm cho bằng nhau -->
+    <body>
+    
+    <div style="background-color:#FFF4A3;">
+      <h2>London</h2>
+      <p>London is the capital city of England.</p>
+      <p>London has over 13 million inhabitants.</p>
+    </div>
+    
+    <div style="background-color:#FFC0C7;">
+      <h2>Oslo</h2>
+      <p>Oslo is the capital city of Norway.</p>
+      <p>Oslo has over 600.000 inhabitants.</p>
+    </div>
+    
+    <div style="background-color:#D9EEE1;">
+      <h2>Rome</h2>
+      <p>Rome is the capital city of Italy.</p>
+      <p>Rome has almost 3 million inhabitants.</p>
+    </div>
+    <iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"></iframe>
+
+<p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+<!-- đây là cách viết web trong web-->
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<!-- sử dụng javarcrip vào trong html -->
+ <!--<header> - Xác định tiêu đề cho tài liệu hoặc phần
+<nav> - Xác định một tập hợp các liên kết điều hướng
+<section> - Xác định một phần trong tài liệu
+<article> - Xác định nội dung độc lập, khép kín
+<aside> - Xác định nội dung ngoài nội dung (như thanh bên)
+<footer> - Xác định chân trang cho tài liệu hoặc phần
+<details> - Xác định các chi tiết bổ sung mà người dùng có thể mở và đóng theo yêu cầu
+<tóm tắt> - Xác định tiêu đề cho phần tử <details>-->
+    </body>
+
+</html>

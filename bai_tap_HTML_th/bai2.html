@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Numbering with UL</title>
+    <style>
+        /* Đặt bộ đếm chính */
+        ul {
+            list-style: none; /* Xóa ký hiệu mặc định của ul */
+            counter-reset: main-counter;/*couter-reset là đặt lại bộ đếm có hai tham số là tên và giá trị bắt đầu mặc định là 0 */
+        }
+
+        /* Đánh số chính cho các mục <li> cấp đầu tiên */
+        ul > li {
+            counter-increment: main-counter;/* tăng gia trị bộ dếm khi phần tử hiển thị có hai tham số 1 là name bộ đếm mà bạn đã đặt ở ul hai là giá trị tăng mặc định là 11*/
+            margin-left: 20px;
+        }
+
+        ul > li::before {
+            content: counter(main-counter, upper-roman) ". "; /* Số La Mã lớn */
+            font-weight: bold;
+        }
+    /* định dạng số cho bộ đếm*/
+
+        /* Đặt bộ đếm phụ cho các <li> bên trong <ul> con */
+        ul ul {
+            counter-reset: sub-counter;
+            margin-left: 40px;
+        }
+
+        ul ul > li {
+            counter-increment: sub-counter;
+        }
+
+        ul ul > li::before {
+            content: counter(sub-counter, lower-roman) ") "; /* Số La Mã nhỏ */
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four
+            <ul>
+                <li>Item Four One</li>
+                <li>Item Four Two</li>
+                <li>Item Four Three</li>
+            </ul>
+        </li>
+    </ul>
+    <style>
+        ul{
+            counter-reset: main_counter;
+        }
+        ul>li{
+            counter-increment: main_counter;
+        }
+        ul>li::before{
+            content:counter(main_counter,upper-roman)".";
+        }
+        ul ul{
+            counter-reset:second_counter;
+        }
+        ul ul>li{
+            counter-increment: second_counter;
+        }
+        ul ul>li::before{
+            content:counter(second_counter,upper-alpha);
+        }
+        ul ul u {
+            counter-reset:three_counter;
+        }
+        ul ul ul>li {
+            counter-increment: three_counter;
+        }
+        ul ul ul>li::before{
+            content:counter(three_counter,decimal);
+        }
+    </style>
+    <div style="background-color:chocolate">
+        <ul>
+            <li>Oakfield Middle School</li>
+            <ul>
+                <li>Tod hastings</li>
+                <ul>
+                    <li>math</li>
+                    <li>history</li>
+                    <li>science</li>
+                </ul>
+                <li>bonita chavez</li>
+                <ul>
+                    <li>math</li>
+                    <li>history</li>
+                    <li>science</li>
+                </ul>
+            </ul>
+            <li>parkview mid_high</li>
+            <ul>
+                <li>jacque rusell</li>
+                <ul>
+                    <li>math</li>
+                    <li>history</li>
+                    <li>science</li>
+                </ul>
+                <li>dwayne clancy</li>
+                <ul>
+                    <li>math</li>
+                    <li>history</li>
+                    <li>science</li>
+                </ul>
+            </ul>
+        </ul>
+
+    </div>
+</body>
+</html>

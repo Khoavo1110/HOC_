@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nha Trang Ancient Tours</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: blue;
+        }
+
+        /* Header */
+        header {
+            background: url('img/Ảnh\ chụp\ màn\ hình\ 2024-06-26\ 205701.png') no-repeat center center;
+            background-size: cover;
+            height: 150px;
+            text-align: center;
+            color: white;
+            padding-top: 50px;
+            font-size: 24px;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffcccc;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            padding: 5px 10px;
+        }
+
+        nav a:hover {
+            background-color: #ff9999;
+            color: white;
+        }
+
+        /* Main content */
+        main {
+            display: flex;
+            margin: 20px;
+        }
+
+        /* Sidebar */
+        aside {
+            flex: 1;
+            margin-right: 20px;
+            width: 50%; /* Chiếm 50% chiều rộng */
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        /* Form section */
+        section.form-section {
+            flex: 1;
+            width: 50%; /* Chiếm 50% chiều rộng */
+            background-color: #ffe6e6;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section.form-section h2 {
+            text-align: center;
+            color: #ff6666;
+        }
+
+        section.form-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        section.form-section input[type="text"], 
+        section.form-section input[type="email"], 
+        section.form-section input[type="number"], 
+        section.form-section select {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        section.form-section input[type="submit"], 
+        section.form-section input[type="reset"] {
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ff9999;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        section.form-section input[type="submit"]:hover, 
+        section.form-section input[type="reset"]:hover {
+            background-color: #ff6666;
+        }
+
+        /* Right image gallery */
+        section.gallery {
+            flex: 1;
+            text-align: center;
+        }
+
+        section.gallery img {
+            width: 100%;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffcccc;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        Nha Trang Ancient Tours - The most beautiful ancient city
+    </header>
+
+    <!-- Navbar -->
+    <nav>
+        <a href="#tour">Du lịch</a>
+        <a href="#services">Dịch vụ</a>
+        <a href="#contact">Liên hệ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#support">Hỗ trợ</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Sidebar -->
+        <aside>
+            <h3>INTRODUCTION</h3>
+            <ul>
+                <li>1. Ẩm thực truyền thống</li>
+                <li>2. Trò chơi dân gian</li>
+                <li>3. Kịch cổ</li>
+                <li>4. Âu thuyền</li>
+                <li>5. Phòng chiếu phim 3D</li>
+            </ul>
+        </aside>
+
+        <!-- Form section -->
+        <section class="form-section">
+            <h2>Thông tin đăng ký</h2>
+            <form>
+                <input type="text" placeholder="Họ tên" required>
+                <input type="email" placeholder="Email" required>
+                <input type="number" placeholder="Số điện thoại" required>
+                <select required>
+                    <option value="">-- Chọn giới tính --</option>
+                    <option value="nam">Nam</option>
+                    <option value="nu">Nữ</option>
+                </select>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+
+        <!-- Image gallery -->
+        <section class="gallery">
+            <img src="restaurant.jpg" alt="Restaurant">
+            <img src="beach.jpg" alt="Beach">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        Mã số sinh viên - Họ tên | Lớp - Khoa
+    </footer>
+</body>
+</html>
